@@ -1,5 +1,6 @@
 package com.dino.blog.controllers;
 
+import com.dino.blog.PostNotFoundException;
 import com.dino.blog.models.Post;
 import com.dino.blog.repo.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,18 +61,18 @@ public class BlogController {
         return "blog-edit";
     }
 
-    @PostMapping("/blog/{id}/edit")
+    @PutMapping("/blog/{id}/edit")
     public String blogPostUpdate(@PathVariable(value = "id") long id, @RequestParam String title, @RequestParam String anons, @RequestParam String full_text, Model model){
-        Post post = postRepository.findById(id).orElseThrow();
+        Post post = postRepository.findById(id).orElseThrow(()-> new PostNotFoundException(id));
         post.setTitle(title);
         post.setAnons(anons);
         post.setFull_text(full_text);
         postRepository.save(post);
         return "redirect:/blog";
     }
-    @PostMapping("/blog/{id}/remove")
+    @DeleteMapping("/blog/{id}/remove")
     public String blogPostDelete(@PathVariable(value = "id") long id, Model model){
-        Post post = postRepository.findById(id).orElseThrow();
+        Post post = postRepository.findById(id).orElseThrow(()-> new PostNotFoundException(id));
         postRepository.delete(post);
         return "redirect:/blog";
     }
