@@ -6,7 +6,8 @@ Trust box web app with swagger documentation
 <ul>
   <li><a href="https://trustboxdoc.herokuapp.com/">Trust Box</a></li>
 </ul>
-### Swagger Documentation
+
+## Swagger Documentation
 <img src="https://sun9-25.userapi.com/impg/Im_xckv2_bHOfpsbWQnSg4zI6cQMHhF8Qzr0kw/Kla3a_DVHs4.jpg?size=2560x1318&quality=96&sign=073fb5d8977b3f7c8ac7404a779d89bf&type=album" width="500" height="300">
 <img src="https://sun9-3.userapi.com/impg/pAnuYQIki4QtlAff3s4vNu3Fp8LrIm-GrFlcnw/1Q6PF3SYcbI.jpg?size=2560x1449&quality=96&sign=c16031fe3eef966a0e30de19e19b9ff2&type=album" width="500" height="300"><hr>
 
