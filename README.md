@@ -45,10 +45,12 @@ This section should list any major frameworks that you built your project using.
 </ul>
 
 ## Screenshots
-<img src="https://sun9-36.userapi.com/impg/92qkSLKl-n0W9ybmmDmPvdA42E97d2CTS_m3vA/7VTc09Ttw_8.jpg?size=2560x1553&quality=96&sign=695fd98f1a4ffbb6f9c5d16736d1c6de&type=album" width="500" height="300">
-<img src="https://sun9-66.userapi.com/impg/iMc5zKMSTCPH-0pMyrWDo_z6wWy2P2xJRFErHw/ub-x7-X0b5Y.jpg?size=2560x1550&quality=96&sign=3a121b7c5cb6eff7119e26284c8be576&type=album" width="500" height="300">
-<img src="https://sun9-10.userapi.com/impg/XRSaR9mLUiqTb5bqu9vrWwyG6f6qurJ11aQdiQ/yvHYzm7g1lk.jpg?size=2560x1551&quality=96&sign=c822bd17baa8ff13b20c1444138eacaf&type=album" width="500" height="300">
-<img src="https://sun9-34.userapi.com/impg/cbYGgzVTcph6lFVzR_7W-S9E3GiD-puRqIPEfw/JkzLyJRxp8Y.jpg?size=2560x1548&quality=96&sign=3c473984a8aa2de62dde9cce0db11617&type=album" width="500" height="300">
+<div align="center">
+  <img src="https://sun9-36.userapi.com/impg/92qkSLKl-n0W9ybmmDmPvdA42E97d2CTS_m3vA/7VTc09Ttw_8.jpg?size=2560x1553&quality=96&sign=695fd98f1a4ffbb6f9c5d16736d1c6de&type=album" width="500" height="300">
+  <img src="https://sun9-66.userapi.com/impg/iMc5zKMSTCPH-0pMyrWDo_z6wWy2P2xJRFErHw/ub-x7-X0b5Y.jpg?size=2560x1550&quality=96&sign=3a121b7c5cb6eff7119e26284c8be576&type=album" width="500" height="300">
+  <img src="https://sun9-10.userapi.com/impg/XRSaR9mLUiqTb5bqu9vrWwyG6f6qurJ11aQdiQ/yvHYzm7g1lk.jpg?size=2560x1551&quality=96&sign=c822bd17baa8ff13b20c1444138eacaf&type=album" width="500" height="300">
+  <img src="https://sun9-34.userapi.com/impg/cbYGgzVTcph6lFVzR_7W-S9E3GiD-puRqIPEfw/JkzLyJRxp8Y.jpg?size=2560x1548&quality=96&sign=3c473984a8aa2de62dde9cce0db11617&type=album" width="500" height="300">
+</div>
 
 ### Trello
 * [Trello link](https://trello.com/b/CSBmzq0n/java-backend-final-project)
