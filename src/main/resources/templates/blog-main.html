@@ -8,14 +8,46 @@
 </head>
 <body>
 <header th:insert="blocks/header :: header"></header>
-<div class="container mt-5">
-    <h1>Blog of Site</h1>
-    <div th:each="el : ${posts}" class="alert alert-info mt-2">
-        <h3 th:text="${el.title}"></h3>
-        <p th:text="${el.anons}"></p>
-        <a th:href="'/blog/' + ${el.id}" class="btn btn-warning">Details</a>
+<div class="container ">
+    <div class="row pt-1">
+        <div class="col-sm-12 mb-3 mt-5">
+            <input class="form-control me-2" id="txtSearch" onkeyup="search()"  type="text" name="keyword" placeholder="Search" aria-label="Search">
+        </div>
     </div>
-    <footer th:insert="blocks/footer :: footer"></footer>
 </div>
+<div class="container">
+    <div class="container mt-5">
+        <h1>Blog of Site</h1>
+        <div id="myItems">
+            <div th:each="el : ${posts}" class="blog alert alert-info mt-2">
+                <div class="blog-body">
+                    <h3 th:text="${el.title}" class="blog-title"></h3>
+                    <p th:text="${el.anons}"></p>
+                    <a th:href="'/blog/' + ${el.id}" class="btn btn-warning">Details</a>
+                </div>
+            </div>
+        </div>
+        <footer th:insert="blocks/footer :: footer"></footer>
+    </div>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<script>
+    function search() {
+        var input, filter, blogs, blogContainer, title, i;
+        input = document.getElementById("txtSearch");
+        filter = input.value.toUpperCase();
+        blogContainer = document.getElementById("myItems");
+        blogs = blogContainer.getElementsByClassName("blog");
+        for (i = 0; i < blogs.length; i++) {
+            title = blogs[i].querySelector(".blog-body h3.blog-title");
+            if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                blogs[i].style.display = "";
+            } else {
+                blogs[i].style.display = "none";
+            }
+        }
+    }
+</script>
 </body>
 </html>
