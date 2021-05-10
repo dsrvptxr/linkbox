@@ -6,12 +6,13 @@
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/0/07/Ala-Too_International_University_Seal.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
+<body class="text-light bg-dark">
 <header th:insert="blocks/header :: header"></header>
 <div class="container mt-5">
     <div th:each="el : ${post}" class="alert alert-info mt-2">
         <h1 th:text="${el.title}"></h1>
         <p th:text="${el.full_text}"></p>
+        <p><a th:href="${el.anons}">Go to page</a></p>
         <p><b>Views </b><span th:text="${el.views}"></span></p>
         <a th:href="'/blog/' + ${el.id} + '/edit'" class="btn btn-warning">Edit</a>
         <form th:action="'/blog/' + ${el.id} + '/remove'" method="post">

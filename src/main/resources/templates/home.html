@@ -3,18 +3,19 @@
 <head>
     <title th:text="${title}">Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/0/07/Ala-Too_International_University_Seal.png" type="image/png" sizes="16x16">
+    <!--<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/0/07/Ala-Too_International_University_Seal.png" type="image/png" sizes="16x16">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
-<body>
+<body class="text-light bg-dark">
     <header th:insert="blocks/header :: header"></header>
 
     <main class="container">
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h1 class="display-4">Dear IAU students!</h1>
-                <p class="lead">  Welcome to the online trust box of International Ala-Too University. Feel free to  leave in this web-site your suggestions, complaints or whatever you would like to say us anonymous or onymous. We will consider your letters and solve these problems.
-                Regards Ala-Too International University.</p>
-                <img class="w-50" src="https://ospost.ru/upload/iblock/564/pismo.png">
+                <h1 class="display-4">Dear Guest!</h1>
+                <p class="lead">  Welcome to the Link box search engine. There are a lot's of trash in internet and that's why meaningful websites are often lost in the junk of information. In this place people collect links to websites for self development in programming. Feel free to share useful links related to CS and study here.</p>
+                <img class="w-50" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/MagicCircle.png"/>
             </div>
         <footer th:insert="blocks/footer :: footer"></footer>
     </main>

@@ -81,7 +81,7 @@ public class BlogController {
         postRepository.save(post);
         return "redirect:/blog";
     }
-    @DeleteMapping("/blog/{id}/remove")
+    @PostMapping("/blog/{id}/remove")
     public String blogPostDelete(@PathVariable(value = "id") long id, Model model){
         Post post = postRepository.findById(id).orElseThrow(()-> new PostNotFoundException(id));
         postRepository.delete(post);
