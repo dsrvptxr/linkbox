@@ -32,7 +32,7 @@ This section should list any major frameworks that you built your project using.
 * REST API
 * Swagger
 * Bootstrap
-* JQuery
+
 
 ## Heroku Link
 <ul>
