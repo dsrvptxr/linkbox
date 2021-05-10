@@ -36,7 +36,7 @@ This section should list any major frameworks that you built your project using.
 
 ## Heroku Link
 <ul>
-  <li><a href="https://trustboxdoc.herokuapp.com/">linkbox</a></li>
+  <li><a href="https://linkboxdoc.herokuapp.com/">linkbox</a></li>
 </ul>
 
 ## Swagger Documentation
